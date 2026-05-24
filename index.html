@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="src/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+
     <title>Rey Weather App</title><link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -13,8 +16,8 @@
 <body>
   <div class="weather-app">
   <header>
-    <form class="search-form">
-      <input type="search" placeholder="Enter city" required class="search-form-input"/>
+    <form class="search-form" id="search-form">
+      <input type="search" placeholder="Enter city" required id="search-form-input" class="search-form-input"/>
       <input type="submit" value="search" class="search-form-button"/>
     </form>
   </header>
@@ -22,7 +25,7 @@
   <main>
     <div class="weather-app-data">
     <div>
-    <h1 class="weather-app-city">Paris</h1>
+    <h1 class="weather-app-city" id="city">Paris</h1>
     <p class="weather-app-details">Tuesday  14:45, Scattered clouds
     <br>
     Humidity: <strong>45%</strong>, Wind: <strong>3.13km/h</strong> </p>
@@ -43,6 +46,7 @@
 
   </footer>
 
-  </div>
+</div>
+<script src="src/index.js"></script>
 </body>
 </html>
